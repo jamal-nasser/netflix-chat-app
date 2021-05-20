@@ -51,7 +51,7 @@ require('./configs/cors.config')(app);
 
 
 
-app.use('/', require('./routes/index'));
+
 app.use('/', require('./routes/auth.routes'));
 app.use('/', require('./routes/watchList.routes'));
 
