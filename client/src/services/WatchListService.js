@@ -1,10 +1,10 @@
 import axios from "axios";
-const { REACT_APP_BACKEND_BASE_URL } = process.env;
+const { REACT_APP_BASE_URL } = process.env;
 
 class WatchListService {
   constructor() {
     this.service = axios.create({
-      baseURL: REACT_APP_BACKEND_BASE_URL,
+      baseURL: REACT_APP_BASE_URL,
       withCredentials: true,
     });
   }
