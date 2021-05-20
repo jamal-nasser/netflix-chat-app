@@ -36,8 +36,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
-
-
 require('./configs/session.config')(app);
 
 app.use(passport.initialize());
@@ -47,10 +45,6 @@ app.locals.title = "Express - Generated with IronGenerator";
 
 
 require('./configs/cors.config')(app);
-
-
-
-
 
 app.use('/', require('./routes/auth.routes'));
 app.use('/', require('./routes/watchList.routes'));

@@ -18,7 +18,6 @@ class LogInScreen extends Component {
     this.service
       .login(email, password)
       .then((response) => {
-        console.log(response);
 
         this.setState({ email: "", password: "" });
         this.props.setUser(response);

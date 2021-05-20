@@ -1,6 +1,5 @@
 import React from 'react';
 import './WatchScreen.css';
-// import Nav from '../Nav/Nav';
 import Banner from '../Banner/Banner';
 import Row from '../Row/Row';
 import requests from '../requests/requests';
