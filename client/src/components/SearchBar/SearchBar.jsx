@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './SearchBar.css';
 import MovieSearchCard from '../MovieSearchCard/MovieSearchCard';
 import { Link } from "react-router-dom";
-// import Nav from '../Nav/Nav';
+
 
 const { REACT_APP_API_KEY} = process.env;
 

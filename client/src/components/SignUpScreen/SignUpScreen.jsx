@@ -42,9 +42,7 @@ class SignUpScreen extends Component {
     return (
          <div className="signupScreen">
       <div className="signupScreen-background">
-        {/* <Link to="/">
-          <img className="signupScreen-logo" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="netflix-logo" />
-        </Link> */}
+        
         <div className="signupScreen-gradient" />
       </div>
       <div className="signupScreen-body">
@@ -76,33 +74,3 @@ class SignUpScreen extends Component {
 export default SignUpScreen;
 
 
-// const SignUpScreen = () => {
-
-//   return (
-//     <div className="signupScreen">
-//       <div className="signupScreen-background">
-//         <Link to="/">
-//           <img className="signupScreen-logo" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="netflix-logo" />
-//         </Link>
-//         <div className="signupScreen-gradient" />
-//       </div>
-//       <div className="signupScreen-body">
-//         <form>
-//           <h1>Sign Up
-//           </h1>
-//           <input type="email" placeholder="Email" />
-//           <input type="password" placeholder="Password" />
-//           <button type="submit">Sign Up</button>
-
-//           <h4>
-//             <span className="signupScreen-gray">Already a member? </span>
-//             <span className="signupScreen-link" > <Link to="/login" style={{ color: '#fff' }} >Sign in now.</Link>  </span>
-//           </h4>
-//         </form>
-//       </div>
-
-//     </div>
-//   )
-// }
-
-// export default SignUpScreen;

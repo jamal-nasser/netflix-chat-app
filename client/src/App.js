@@ -59,7 +59,7 @@ function App() {
         
         <ProtectedRoute exact path="/watchlist" user={loggedInUser}  render={() => <WatchList setUser={loggedInUser} />}  />
 
-      {/* <Route exact path="/" component={HomeScreen} /> */}
+      
     </Switch>
 
   </div>

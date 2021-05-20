@@ -31,8 +31,7 @@ watchList.get("/watchlist/:id", (req, res, next) => {
 
   WatchList.find({owner : id})
     .then((watchList) => {
-      // console.log("LOGGED IN USER IN movies", req.user);
-      // console.log(watchList)
+      
       res.status(200).json(watchList);
     })
     .catch((err) => {
@@ -48,7 +47,7 @@ watchList.delete("/watchlist/:id", (req, res, next) => {
   WatchList.find({ owner: req.user._id })
     
     .then((response) => {
-      // console.log(response)
+      
       const updatedMoviesList = response[0].movies.filter((item) => {
         return item._id != id
       })

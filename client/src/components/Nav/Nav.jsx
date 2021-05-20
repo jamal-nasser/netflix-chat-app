@@ -9,12 +9,12 @@ const Nav = ({ userInSession, setUser }) => {
   const [loggedInUser, setLoggedInUser] = useState(null);
 
   const service = new AuthService();
-  // KEEP AN EYE ON THE UPDATES OF THIS COMPONENT'S PROPS
+ 
   useEffect(() => {
     setLoggedInUser(userInSession);
   }, [userInSession]);
 
-  // FUNCTION TO LOG USER OUT
+  
   const logoutUser = () => {
     service
       .logout()

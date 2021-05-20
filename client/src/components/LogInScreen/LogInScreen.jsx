@@ -73,33 +73,3 @@ class LogInScreen extends Component {
 
 export default LogInScreen;
 
-
-// const LogInScreen = () => {
-
-//   return (
-//     <div className="loginScreen">
-//       <div className="loginScreen-background">
-//         <Link to="/">
-//           <img className="loginScreen-logo" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="netflix-logo" />
-//         </Link>
-//         <div className="loginScreen-gradient" />
-//       </div>
-//       <div className="loginScreen-body">
-//         <form>
-//           <h1>Sign In</h1>
-//           <input type="email" placeholder="Email" />
-//           <input type="password" placeholder="Password" />
-//           <button type="submit">Sign In</button>
-
-//           <h4>
-//             <span className="loginScreen-gray">New to Netflix? </span>
-//             <span className="loginScreen-link" > <Link to="/signup" style={{ color: '#fff'}} >Sign up now.</Link> </span>
-//           </h4>
-//         </form>
-//       </div>
-
-//     </div>
-//   )
-// }
-
-// export default LogInScreen;
