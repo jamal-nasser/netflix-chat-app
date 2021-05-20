@@ -1,0 +1,25 @@
+{
+  "name": "netflix-chat-app-mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "init-server": "node server/bin/www",
+    "start": "npm run install-server && npm run init-server",
+    "build-client": "npm run build --prefix client",
+    "install-client": "npm install --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install-client && npm run build-client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamal-nasser/netflix-chat-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamal-nasser/netflix-chat-app/issues"
+  },
+  "homepage": "https://github.com/jamal-nasser/netflix-chat-app#readme"
+}
