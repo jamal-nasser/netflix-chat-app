@@ -19,13 +19,6 @@ class AuthService {
       .post("/login", { email, password })
       .then((response) => response.data);
 
-  // edit = (email, campus, course) =>
-  //   this.service
-  //     .post("/edit/:id", { email, campus, course })
-  //     .then((response) => response.data);
-
-
-
   logout = () =>
     this.service.post("/logout", {}).then((response) => response.data);
 

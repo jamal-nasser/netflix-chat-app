@@ -25,11 +25,6 @@ class WatchListService {
     this.service
       .delete(`/watchlist/${watchListId}`)
       .then((response) => response.data);
-
-  // updateWatchList = (watchListId) =>
-  //   this.service
-  //     .put(`/watchlist/${watchListId}`)
-  //     .then((response) => response.data);
 }
 
 export default WatchListService;
