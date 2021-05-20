@@ -1,0 +1,42 @@
+.searchBar-screen{
+  background-color: #000;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchBar-screen >h1{
+  text-align: center;
+  color: #fff;
+  padding-top: 80px;
+}
+
+.searchBar-input > input{
+  outline-width: 0;
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 15px;
+  margin-top: 50px;
+  margin-left: 35%;
+  margin-bottom: 50px;
+  left: auto;
+  right: auto;
+}
+
+.myWatchList-button{
+  position: fixed;
+  right: 47%;
+  cursor: pointer; 
+  padding: 7px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  top: 0;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #e50914;
+  border-radius: 0;
+  
+}
