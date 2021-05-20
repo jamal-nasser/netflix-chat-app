@@ -23,7 +23,6 @@ const WatchList = (props) => {
   }, [props.setUser._id])
 
   const handleRemoveFromWatchList = (movieId) => {
-    console.log(movieId)
 
     const service = new WatchListService();
 

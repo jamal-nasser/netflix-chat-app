@@ -30,18 +30,21 @@ const MovieSearchCard = ({ movie }) => {
       backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path} ")`,
       backgroundPosition: "center center"
     }}>
-      <div>
-        {addMessage && <p>{addMessage}</p>}
-      </div>
+      
       <div className="movieSearchCard-content">
         <h1 className="movieSearchCard-title">{movie?.title || movie?.name || movie?.original_name}</h1>
+        
         <div>
           <button className="movieSearchCard-button" onClick={() => handleAddToWatchList(movie)}>Add to My List</button>
-       </div>
+        </div>
+        <div>
+          {addMessage && <p className="addMessage">{addMessage}</p>}
+        </div>
         <h1 className="movieSearchCard-description">
           {truncate(`${movie?.overview}`, 150)}
         </h1>
       </div>
+     
       <div className="movieSearchCard--fadeBottom" />
     </div>
   )

@@ -45,7 +45,7 @@ function App() {
     <div className="app">
       <Nav userInSession={loggedInUser} setUser={setTheUserToGlobalState}  />
     <Switch>
-      <Route path="/signup" render={() => <Redirect to="/profile"/>} />
+      <Route path="/signup" render={() => <Redirect to="/watch"/>} />
 
       <Route path="/login" render={() => <Redirect  to="/watch" />} />
 
@@ -57,7 +57,7 @@ function App() {
 
         <ProtectedRoute path="/chat" user={loggedInUser}  component={Chat} />
         
-        <ProtectedRoute exact path="/watchlist" user={loggedInUser}  render={() => <WatchList setUser={loggedInUser} />}  />
+        <ProtectedRoute path="/watchlist/:id" user={loggedInUser}  render={() => <WatchList setUser={loggedInUser} />}  />
 
       
     </Switch>
@@ -79,7 +79,7 @@ function App() {
 
           <ProtectedRoute path="/search" user={loggedInUser} component={SearchBar} />
           
-          <ProtectedRoute exact path="/watchlist" user={loggedInUser} render={() => <WatchList setUser={setTheUserToGlobalState} />} />
+          <ProtectedRoute exact path="/watchlist/:id" user={loggedInUser} render={() => <WatchList setUser={setTheUserToGlobalState} />} />
 
       <Route exact path="/" component={HomeScreen} />
     </Switch>

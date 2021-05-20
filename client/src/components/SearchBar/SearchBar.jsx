@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 
 const { REACT_APP_API_KEY} = process.env;
 
-
-
 const SearchBar = () => {
 
   const [query, setQuery] = useState("");

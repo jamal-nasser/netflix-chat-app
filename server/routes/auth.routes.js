@@ -12,7 +12,7 @@ const User = require("../models/User.model");
 
 
 authRoutes.post("/login", (req, res, next) => {
-  console.log('BODY', req.body)
+ 
   passport.authenticate("local", (err, theUser, failureDetails) => {
     if (err) {
       res
@@ -76,7 +76,6 @@ authRoutes.post("/signup", (req, res, next) => {
       });
     })
     .then((userFromDB) => {
-      console.log("Newly created user is: ", userFromDB);
 
       const { _id, email, createdAt, updatedAt } = userFromDB;
 

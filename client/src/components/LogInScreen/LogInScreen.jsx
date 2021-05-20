@@ -49,11 +49,11 @@ class LogInScreen extends Component {
 
             <h1>Sign In</h1>
             
-            <input name="email" type="email" placeholder="Email" autocomplete="username" value={this.state.email} onChange={(e) => this.handleChange(e)} />
+            <input name="email" type="email" placeholder="Email" autoComplete="username" value={this.state.email} onChange={(e) => this.handleChange(e)} />
 
-            <input name="password" type="password" placeholder="Password" autocomplete="current-password" value={this.state.password} onChange={(e) => this.handleChange(e)} />
+            <input name="password" type="password" placeholder="Password" autoComplete="current-password" value={this.state.password} onChange={(e) => this.handleChange(e)} />
             
-            <div>{this.state.errorMessage && <span>{this.state.errorMessage}</span>}</div>
+            <div>{this.state.errorMessage && <p className="errorMessage">{this.state.errorMessage}</p>}</div>
 
             
               <button className="loginScreen-button" type="submit" value="login" >Sign In</button>

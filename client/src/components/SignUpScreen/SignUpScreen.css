@@ -82,4 +82,7 @@
  text-decoration: underline;
 }
 
+.errorMessage{
+  color: #fff;
+}
 
