@@ -30,7 +30,7 @@ watchList.get("/watchlist/:id", (req, res, next) => {
 
   WatchList.find({owner : id})
     .then((watchList) => {
-      
+      console.log(watchList)
       res.status(200).json(watchList);
     })
     .catch((err) => {

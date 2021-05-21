@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import TextField from "@material-ui/core/TextField";
 import './Chat.css';
 
-const { REACT_APP_BACKEND_BASE_URL } = process.env;
+const { REACT_APP_BASE_URL } = process.env;
 
 const Chat = () => {
 
@@ -14,7 +14,7 @@ const Chat = () => {
 
   useEffect(
     () => {
-      socketRef.current = io.connect(REACT_APP_BACKEND_BASE_URL)
+      socketRef.current = io.connect(REACT_APP_BASE_URL)
       socketRef.current.on("message", ({ name, message }) => {
         setChat([...chat, { name, message }])
       })

@@ -31,7 +31,7 @@ const SearchBar = () => {
     <div className="searchBar-screen">
      
       <h1>Search for your favorite movie, series or documentary..</h1>
-      <Link to="/watchlist">
+      <Link to="/watchlist/:id">
         <button className="myWatchList-button">
           My Watch List
         </button>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './WatchList.css';
-import Nav from '../Nav/Nav';
 import WatchListService from '../../services/WatchListService';
 
 const WatchList = (props) => {
@@ -13,14 +12,16 @@ const WatchList = (props) => {
     const service = new WatchListService();
 
     service
-      .showWatchList(props.setUser._id)
+      .showWatchList(props.loggedInUser._id)
       .then((responseFromApi) => {
+        console.log(responseFromApi)
         setDetails(responseFromApi)
       })
       .catch((error) => {
         console.error(error);
       });
-  }, [props.setUser._id])
+   
+  }, [props.loggedInUser._id])
 
   const handleRemoveFromWatchList = (movieId) => {
 
@@ -43,7 +44,7 @@ const WatchList = (props) => {
 
   return (
     <div className="myWatchList">
-    <Nav />
+       {/* <h1>Hello</h1> */}
      <h1 className="myWatchList-heading">My Watch List</h1>
       <div>
         {removeMessage && <p>{removeMessage}</p>}

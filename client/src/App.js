@@ -57,7 +57,7 @@ function App() {
 
         <ProtectedRoute path="/chat" user={loggedInUser}  component={Chat} />
         
-        <ProtectedRoute path="/watchlist/:id" user={loggedInUser}  render={() => <WatchList setUser={loggedInUser} />}  />
+        <ProtectedRoute path="/watchlist" user={loggedInUser} component={WatchList} />
 
         <Route exact path="/" component={HomeScreen} />
     </Switch>
@@ -79,7 +79,7 @@ function App() {
 
           <ProtectedRoute path="/search" user={loggedInUser} component={SearchBar} />
           
-          <ProtectedRoute exact path="/watchlist/:id" user={loggedInUser} render={() => <WatchList setUser={setTheUserToGlobalState} />} />
+          <ProtectedRoute  path="/watchlist" user={loggedInUser} component={WatchList} />
 
       <Route exact path="/" component={HomeScreen} />
     </Switch>
