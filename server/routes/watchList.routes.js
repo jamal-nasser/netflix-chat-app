@@ -55,7 +55,11 @@ watchList.delete("/watchlist/:id", (req, res, next) => {
     })
     .then((result) => {
       
-      res.status(200).json(result);
+      return WatchList.findById(result._id)
+      
+    }).then((found) => {
+      
+      res.status(200).json(found);
     })
     .catch((err) => {
       next(err)

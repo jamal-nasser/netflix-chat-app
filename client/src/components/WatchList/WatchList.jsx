@@ -20,7 +20,7 @@ const WatchList = (props) => {
       .catch((error) => {
         console.error(error);
       });
-   
+    
   }, [props.loggedInUser._id])
 
   const handleRemoveFromWatchList = (movieId) => {
@@ -31,8 +31,9 @@ const WatchList = (props) => {
     service
       .deleteWatchList(movieId)
       .then((response) => {
-        
+       
         setRemoveMessage('Movie has been removed!')
+        
       })
       .catch((err) => console.error(err));
   }
@@ -61,7 +62,8 @@ const WatchList = (props) => {
               <h1 className="myWatchScreen-title">{item.title || item.name || item.original_name}</h1>
 
               <div>
-                <button className="myWatchScreen-button" onClick={() => handleRemoveFromWatchList(item._id)} >Remove from My List</button>
+                <button className="myWatchScreen-button"  onClick={() => handleRemoveFromWatchList(item._id)} >Remove from My List</button>
+               
               </div>
 
               <h1 className="myWatchScreen-description">
