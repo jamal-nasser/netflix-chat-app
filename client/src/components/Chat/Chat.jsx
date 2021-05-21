@@ -50,13 +50,11 @@ const Chat = () => {
         <div className="name-field">
           <TextField name="name" onChange={(e) => onTextChange(e)} value={state.name} label="Name" />
         </div>
-        <div>
+        <div className="name-field">
           <TextField
             name="message"
             onChange={(e) => onTextChange(e)}
             value={state.message}
-            id="outlined-multiline-static"
-            variant="outlined"
             label="Message"
           />
         </div>

@@ -30,17 +30,20 @@ const SearchBar = () => {
   return (
     <div className="searchBar-screen">
      
-      <h1>Search for your favorite movie, series or documentary..</h1>
-      <Link to="/watchlist/:id">
-        <button className="myWatchList-button">
-          My Watch List
+      <h1>Your favorite movie, series or documentary..</h1>
+
+      <div>
+        <Link to="/watchlist">
+          <button className="myWatchList-button">
+            My Watchlist
         </button>
-      </Link>
+        </Link>
+      </div>
       <div className="searchBar-input">
         <input  type="text" placeholder="Search all..." value={query} onChange={handleChange} />
       </div>
       {results.length > 0 && (
-        <div>
+        <div className="searchBar-result">
           {results.map((movie) => {
             return (<div key={movie.id}>
               <MovieSearchCard movie={movie} />

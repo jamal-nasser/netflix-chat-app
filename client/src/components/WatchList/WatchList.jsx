@@ -14,7 +14,7 @@ const WatchList = (props) => {
     service
       .showWatchList(props.loggedInUser._id)
       .then((responseFromApi) => {
-        console.log(responseFromApi)
+       
         setDetails(responseFromApi)
       })
       .catch((error) => {
@@ -31,7 +31,7 @@ const WatchList = (props) => {
     service
       .deleteWatchList(movieId)
       .then((response) => {
-        console.log(response)
+        
         setRemoveMessage('Movie has been removed!')
       })
       .catch((err) => console.error(err));
@@ -44,7 +44,6 @@ const WatchList = (props) => {
 
   return (
     <div className="myWatchList">
-       {/* <h1>Hello</h1> */}
      <h1 className="myWatchList-heading">My Watch List</h1>
       <div>
         {removeMessage && <p>{removeMessage}</p>}
