@@ -7,13 +7,13 @@
   padding-top: 100px;
 }
 
-form {
+.chat-form {
   max-width: 350px;
   border-radius: 5px;
   padding: 20px;
   border: 1px solid red;
   color:#fff;
-  margin-left: 170px;
+  margin-left: 100px;
 }
 
 .name-field {

@@ -45,7 +45,7 @@ const Chat = () => {
   }
   return (
     <div className="card">
-      <form onSubmit={onMessageSubmit}>
+      <form className="chat-form" onSubmit={onMessageSubmit}>
         <h1>Netflix Messenger</h1>
         <div className="name-field">
           <TextField name="name" onChange={(e) => onTextChange(e)} value={state.name} label="Name" />
