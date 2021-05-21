@@ -1,7 +1,6 @@
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 30rem;
   height: 90vh;
   color: #fff;
   padding-top: 100px;
@@ -13,7 +12,7 @@
   padding: 20px;
   border: 1px solid red;
   color:#fff;
-  margin-left: 100px;
+  
 }
 
 .name-field {
@@ -37,12 +36,10 @@ button {
   padding: 20px;
   border: 1px solid red;
   color:#fff;
-
 }
 
 h3 {
   color: #2f72da;
-  
 
 }
 
